@@ -1,5 +1,5 @@
 import {expect} from 'chai';
-import {List} from 'immutable';
+import {List,Map} from 'immutable';
 
 
 describe('immutability',() => {
@@ -7,7 +7,7 @@ describe('immutability',() => {
    describe('Numbers',() => {
        
        function increment(currentState){
-           return currentState++;
+           return currentState+1;
        }
        
        it('is immutable',() => {
